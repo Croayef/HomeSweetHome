@@ -1,5 +1,6 @@
 package com.pogo.homesweethome;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.support.design.widget.TabLayout;
 
@@ -84,7 +85,7 @@ public class Main2Activity extends AppCompatActivity implements FragmentHome.OnF
 
     @Override
     public void onFragmentInteraction(Uri uri) {
-        
+
     }
 
     /**
@@ -170,4 +171,68 @@ public class Main2Activity extends AppCompatActivity implements FragmentHome.OnF
             return null;
         }
     }
+
+
+    public void onHomeButton1Click(View view){
+        Intent i = new Intent(Main2Activity.this, HomeButton1.class);
+        Main2Activity.this.startActivity(i);
+    }
+
+    public void onHomeButton2Click(View view){
+        Intent i = new Intent(Main2Activity.this, HomeButton2.class);
+        Main2Activity.this.startActivity(i);
+    }
+
+    public void onHomeButton3Click(View view){
+        Intent i = new Intent(Main2Activity.this, HomeButton3.class);
+        Main2Activity.this.startActivity(i);
+    }
+
+    public void onHomeButton4Click(View view){
+        Intent i = new Intent(Main2Activity.this, HomeButton4.class);
+        Main2Activity.this.startActivity(i);
+    }
+
+    public void onHomeButton5Click(View view){
+        Intent i = new Intent(Main2Activity.this, HomeButton5.class);
+        Main2Activity.this.startActivity(i);
+    }
+
+    public void onHomeButton6Click(View view){
+        Intent i = new Intent(Main2Activity.this, HomeButton6.class);
+        Main2Activity.this.startActivity(i);
+    }
+
+    public void onGardenButton1Click(View view){
+        Intent i = new Intent(Main2Activity.this, GardenButton1.class);
+        Main2Activity.this.startActivity(i);
+    }
+
+    public void onGardenButton2Click(View view){
+        Intent i = new Intent(Main2Activity.this, GardenButton2.class);
+        Main2Activity.this.startActivity(i);
+    }
+
+    public void onGardenButton3Click(View view){
+        Intent i = new Intent(Main2Activity.this, GardenButton3.class);
+        Main2Activity.this.startActivity(i);
+    }
+
+    public void onGardenButton4Click(View view){
+        Intent i = new Intent(Main2Activity.this, GardenButton4.class);
+        Main2Activity.this.startActivity(i);
+    }
+
+
+    public void onGarageButton1Click(View view){
+        Intent i = new Intent(Main2Activity.this, GarageButton1.class);
+        Main2Activity.this.startActivity(i);
+    }
+
+    public void onGarageButton2Click(View view){
+        Intent i = new Intent(Main2Activity.this, GarageButton2.class);
+        Main2Activity.this.startActivity(i);
+    }
+
+
 }

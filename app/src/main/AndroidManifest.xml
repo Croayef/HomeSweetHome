@@ -37,7 +37,19 @@
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
-            android:theme="@style/Andrzej"></activity>
+            android:theme="@style/Andrzej" />
+        <activity android:name=".HomeButton1" />
+        <activity android:name=".HomeButton2" />
+        <activity android:name=".HomeButton3" />
+        <activity android:name=".HomeButton4" />
+        <activity android:name=".HomeButton5" />
+        <activity android:name=".HomeButton6" />
+        <activity android:name=".GardenButton1" />
+        <activity android:name=".GardenButton2" />
+        <activity android:name=".GardenButton3" />
+        <activity android:name=".GardenButton4" />
+        <activity android:name=".GarageButton1" />
+        <activity android:name=".GarageButton2"></activity>
     </application>
 
 </manifest>

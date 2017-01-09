@@ -9,7 +9,7 @@
     tools:context="com.pogo.homesweethome.Main2Activity$PlaceholderFragment">
 
     <Button
-        android:text="Button"
+        android:text="HomeButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button6"
@@ -18,10 +18,33 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="34dp"
-        android:layout_marginEnd="34dp" />
+        android:layout_marginEnd="34dp"
+        android:onClick="onHomeButton2Click" />
 
     <Button
         android:text="Button"
+        android:onClick="onHomeButton1Click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:id="@+id/button11"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignStart="@+id/button5" />
+
+    <Button
+        android:text="Button"
+        android:onClick="onHomeButton1Click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:id="@+id/button10"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignStart="@+id/button5" />
+
+    <Button
+        android:text="HomeButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button5"
@@ -30,10 +53,12 @@
         android:layout_marginStart="56dp"
         android:layout_below="@+id/button4"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="onHomeButton3Click" />
 
     <Button
-        android:text="Button"
+        android:text="HomeButton1"
+        android:onClick="onHomeButton1Click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="37dp"
@@ -43,32 +68,35 @@
         android:layout_alignStart="@+id/button5" />
 
     <Button
-        android:text="Button"
+        android:text="HomeButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/button5"
         android:layout_alignRight="@+id/button6"
         android:layout_alignEnd="@+id/button6"
-        android:id="@+id/button7" />
+        android:id="@+id/button7"
+        android:onClick="onHomeButton4Click" />
 
     <Button
-        android:text="Button"
+        android:text="HomeButton6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/button8"
         android:layout_alignLeft="@+id/button7"
         android:layout_alignStart="@+id/button7"
-        android:id="@+id/button9" />
+        android:id="@+id/button9"
+        android:onClick="onHomeButton6Click" />
 
     <Button
-        android:text="Button"
+        android:text="HomeButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button8"
         android:layout_below="@+id/button5"
         android:layout_alignLeft="@+id/button5"
         android:layout_alignStart="@+id/button5"
-        android:layout_marginTop="87dp" />
+        android:layout_marginTop="87dp"
+        android:onClick="onHomeButton5Click" />
 
 
 </RelativeLayout>
