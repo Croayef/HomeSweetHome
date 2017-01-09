@@ -1,8 +1,8 @@
 package com.pogo.homesweethome;
 
+import android.net.Uri;
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -17,9 +17,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.widget.TextView;
 
-public class Main2Activity extends AppCompatActivity {
+
+public class Main2Activity extends AppCompatActivity implements FragmentHome.OnFragmentInteractionListener, FragmentGarage.OnFragmentInteractionListener, FragmentGarden.OnFragmentInteractionListener{
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -82,6 +82,11 @@ public class Main2Activity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+        
+    }
+
     /**
      * A placeholder fragment containing a simple view.
      */
@@ -107,12 +112,15 @@ public class Main2Activity extends AppCompatActivity {
             return fragment;
         }
 
+
+        //TUTAJ JEST CONTENT!
+
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
+
             View rootView = inflater.inflate(R.layout.fragment_main2, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+
             return rootView;
         }
     }
@@ -131,6 +139,15 @@ public class Main2Activity extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
+            switch (position){
+                case 0:
+                    return FragmentHome.newInstance("s1","s2");
+                case 1:
+                    return FragmentGarden.newInstance("s1","s2");
+                case 2:
+                    return FragmentGarage.newInstance("s1","s2");
+            }
+
             return PlaceholderFragment.newInstance(position + 1);
         }
 
@@ -144,11 +161,11 @@ public class Main2Activity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "SECTION 1";
+                    return "HOME";
                 case 1:
-                    return "SECTION 2";
+                    return "GARDEN";
                 case 2:
-                    return "SECTION 3";
+                    return "GARAGE";
             }
             return null;
         }
