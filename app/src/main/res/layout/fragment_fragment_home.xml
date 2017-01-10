@@ -10,6 +10,8 @@
 
     <Button
         android:text="front door"
+        android:textColor="#FFFFFF"
+        android:paddingTop="50dp"
         android:onClick="onHomeButton1Click"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -20,7 +22,9 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="backdoor xD"
+        android:textColor="#FFFFFF"
+        android:paddingTop="50dp"
+        android:text="backdoor"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:id="@+id/button6"
@@ -33,20 +37,8 @@
         android:layout_marginStart="15dp" />
 
     <Button
-        android:text="livinig room"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:id="@+id/button5"
-        android:onClick="onHomeButton3Click"
-        android:background="@drawable/light_on"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/button6"
-        android:layout_toEndOf="@+id/button6"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp" />
-
-    <Button
         android:text="exterior roller"
+        android:textColor="#FFFFFF"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:id="@+id/button8"
@@ -59,6 +51,7 @@
 
     <Button
         android:text="interior roller"
+        android:textColor="#747373"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:id="@+id/button9"
@@ -68,6 +61,17 @@
         android:layout_alignBottom="@+id/button8"
         android:layout_alignLeft="@+id/button6"
         android:layout_alignStart="@+id/button6" />
+
+    <Button
+        android:text="livinig room"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/button5"
+        android:onClick="onHomeButton3Click"
+        android:background="@drawable/light_on"
+        android:layout_below="@+id/button8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>

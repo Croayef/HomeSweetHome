@@ -13,7 +13,7 @@
         android:layout_height="150dp"
         android:id="@+id/button5"
         android:onClick="onGarageButton1Click"
-        android:background="@drawable/garage_closed"
+        android:drawableTop="@drawable/garage_closed"
         android:layout_alignParentTop="true" />
 
     <Button
