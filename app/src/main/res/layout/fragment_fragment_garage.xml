@@ -9,7 +9,7 @@
     tools:context="com.pogo.homesweethome.Main2Activity$PlaceholderFragment">
 
     <Button
-        android:text="swiatlo"
+        android:text="#1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button6"
@@ -22,7 +22,6 @@
         android:background="@drawable/light_on" />
 
     <Button
-        android:text="garaż"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button5"
