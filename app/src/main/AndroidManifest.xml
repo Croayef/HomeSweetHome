@@ -49,7 +49,7 @@
         <activity android:name=".GardenButton3" />
         <activity android:name=".GardenButton4" />
         <activity android:name=".GarageButton1" />
-        <activity android:name=".GarageButton2"></activity>
+        <activity android:name=".GarageButton2" />
     </application>
 
 </manifest>
