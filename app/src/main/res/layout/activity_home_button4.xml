@@ -10,4 +10,34 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.pogo.homesweethome.HomeButton4">
 
+    <TextView
+        android:text="Hi-Fi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView5" />
+
+    <Switch
+        android:text="On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:id="@+id/switch4"
+        android:textOn="ON"
+        android:textOff="OFF" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="102dp"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/switch4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
