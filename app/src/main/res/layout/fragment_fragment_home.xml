@@ -11,74 +11,63 @@
     <Button
         android:text="front door"
         android:onClick="onHomeButton1Click"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="37dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:id="@+id/button4"
+        android:background="@drawable/lock_on"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_alignStart="@+id/button5"
-        android:background="@drawable/lock_on" />
-
-    <Button
-        android:text="livinig room"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button5"
-        android:layout_marginTop="29dp"
-        android:onClick="onHomeButton3Click"
-        android:background="@drawable/light_on"
-        android:layout_below="@+id/button4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
         android:text="backdoor xD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:id="@+id/button6"
         android:onClick="onHomeButton2Click"
         android:background="@drawable/lock_off"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_toRightOf="@+id/button4"
+        android:layout_toEndOf="@+id/button4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button7"
-        android:onClick="onHomeButton4Click"
-        android:text="HI_FI"
-        android:layout_alignBaseline="@+id/button5"
-        android:layout_alignBottom="@+id/button5"
-        android:layout_alignLeft="@+id/button6"
-        android:layout_alignStart="@+id/button6"
-        android:layout_marginLeft="82dp"
-        android:layout_marginStart="82dp" />
-
-    <Button
-        android:text="interior roller"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button9"
-        android:onClick="onHomeButton6Click"
-        android:background="@drawable/roller_off"
-        android:layout_alignBottom="@+id/button8"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="20dp" />
+        android:text="livinig room"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/button5"
+        android:onClick="onHomeButton3Click"
+        android:background="@drawable/light_on"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button6"
+        android:layout_toEndOf="@+id/button6"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
 
     <Button
         android:text="exterior roller"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:id="@+id/button8"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="15dp"
         android:onClick="onHomeButton5Click"
         android:background="@drawable/roller_on"
-        android:layout_below="@+id/button5"
+        android:layout_below="@+id/button4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="interior roller"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/button9"
+        android:onClick="onHomeButton6Click"
+        android:background="@drawable/roller_off"
+        android:layout_alignBaseline="@+id/button8"
+        android:layout_alignBottom="@+id/button8"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_alignStart="@+id/button6" />
 
 
 </RelativeLayout>
