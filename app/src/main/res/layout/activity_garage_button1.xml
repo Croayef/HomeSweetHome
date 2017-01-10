@@ -26,29 +26,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/textView2" />
+        android:id="@+id/textView2"
+        android:textSize="@dimen/fab_margin"/>
 
-    <Switch
-        android:text="Open"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="17dp"
-        android:id="@+id/switch2"
-        android:textOn="Opened"
-        android:textOff="Closed" />
-
-    <TextView
-        android:text="Close after"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/switch2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="27dp"
-        android:id="@+id/textView3" />
 
     <Spinner
         android:layout_width="wrap_content"
@@ -69,4 +49,26 @@
         android:layout_alignTop="@+id/textView3"
         android:onClick="Radioclick"
         style="@style/Widget.AppCompat.CompoundButton.RadioButton" />
+
+    <Switch
+        android:text="Open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/switch2"
+        android:textOn="Opened"
+        android:textOff="Closed"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Close after"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/switch2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

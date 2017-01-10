@@ -145,7 +145,15 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
     public boolean onIsMultiPane() {
         return isXLargeTablet(this);
     }
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
     /**
      * {@inheritDoc}
      */
@@ -218,7 +226,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
                //     Toast.makeText(getActivity(),
                //             "Your Message", Toast.LENGTH_LONG).show();
                     final ProgressDialog progress = new ProgressDialog(getActivity());
-                    progress.setTitle("Scaning for devices");
+                    progress.setTitle("Scanning for devices");
                     progress.setMessage("Wait while scanning..");
                     progress.setCancelable(true); // disable dismiss by tapping outside of the dialog
                     progress.show();
