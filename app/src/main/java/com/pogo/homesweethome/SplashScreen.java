@@ -49,7 +49,7 @@ public class SplashScreen extends AppCompatActivity {
             //to taka symulacja że coś się dzieje,
             //jak dodamy pobieranie danych to try-catch leci do kosza
             try {
-
+Thread.sleep(5000);
 
             }catch (Exception e){
 
