@@ -19,6 +19,6 @@
 
     <header
         android:fragment="com.pogo.homesweethome.SettingsActivity$DevicePreferenceFragment"
-        android:icon="@drawable/ic_sync_black_24dp"
+        android:icon="@drawable/ic_menu_manage"
         android:title="Devices" />
 </preference-headers>

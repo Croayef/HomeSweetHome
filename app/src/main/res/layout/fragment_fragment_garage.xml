@@ -18,7 +18,8 @@
         android:layout_alignTop="@+id/button5"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="onGarageButton2Click" />
+        android:onClick="onGarageButton2Click"
+        android:background="@drawable/light_on" />
 
     <Button
         android:text="garaż"
@@ -29,7 +30,8 @@
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/button6"
         android:layout_toStartOf="@+id/button6"
-        android:onClick="onGarageButton1Click" />
+        android:onClick="onGarageButton1Click"
+        android:background="@drawable/garage_closed" />
 
 
 </RelativeLayout>
